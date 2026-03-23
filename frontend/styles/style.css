@@ -36,3 +36,132 @@ ul li {list-style: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight:400;}
+
+
+html, body{
+   height: auto;
+}
+header{
+   margin:15px;
+   margin-left: 20px;
+}
+aside{
+   margin:10px;
+   padding: 20px;
+   border: 1px solid black;
+   width: 600px;
+   height: 88vh;
+   border-radius: 5px;
+   text-align: center;
+   overflow-y: auto;
+}
+aside::-webkit-scrollbar {
+  width: 15px;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 5px;
+}
+
+main{
+   border: 1px solid black;
+   border-radius: 5px;
+   display:flex;
+   margin-top:10px;
+   margin-left:10px;
+   margin-right:10px;
+   padding: 20px;
+   height: 88vh;
+   overflow-y: auto;
+   flex-flow: row wrap;
+}
+::-webkit-scrollbar {
+   width: 20px;
+}
+::-webkit-scrollbar-track-piece {
+   border: 1px solid #535353;
+   background-color: #fdfdfd;
+   border-radius: 0.22em;
+}
+::-webkit-scrollbar-thumb {
+   border-radius: 0.22em;
+   border: 1px solid #535353;
+   background: linear-gradient(45deg, rgb(122, 122, 122), rgb(248, 248, 248));
+}
+
+/*  To customize the sliding buttons*/
+::-webkit-scrollbar-button:single-button {
+   background-color: #ffffff;
+   display: block;
+   background-size: 10px;
+   background-repeat: no-repeat;
+   border-radius: 0.22em;
+}
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+   border-radius: 0.22em;
+   border: 1px solid #535353;
+   height: 16px;
+   width: 16px;
+   background-position: center;
+   background-image: url("../images/gray-up.svg");
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+   background-image: url("../images/black-up.svg");
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+   background-image: url("../images/gray-up.svg");
+}
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+   border-radius: 0.22em;
+   border: 1px solid #535353;
+   height: 16px;
+   width: 16px;
+   background-position: center;
+   background-image: url("../images/gray-down.svg");
+}
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+   background-image: url("../images/black-down.svg");
+}
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+   background-image: url("../images/gray-down.svg");
+}
+.block{
+   display:flex;
+}
+.purchase{
+   border: 1px solid black;
+   border-radius: 5px;
+   margin:10px;
+   padding: 20px;
+   margin-left: 40px;
+   margin-right: 40px;
+   width: 350px;
+   height: 230px;
+}
+
+.purchase-link{
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 5px;
+   margin: 5px;
+   position: relative;
+   left: 245px;
+   top: -7px;
+}
+.name-purchase{
+   position: relative;
+   top: 2px;
+   margin: 10px;
+}
+
+.shop-link{
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 10px;
+   margin: 10px;
+
+}
